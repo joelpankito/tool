@@ -8,7 +8,16 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+    <header class="row">
+      <div class="col-5 links header"> 
+        <%= link_to 'Welcome to Useful Links', root_path%>
+      </div>
+      <div class="col-6">
+        <%= link_to 'Add New Link', new_link_path %>
+      </div>
+    </header>
 
+    <br class="clear" />
   <body>
     <%= yield %>
   </body>
